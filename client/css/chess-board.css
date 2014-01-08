@@ -1,0 +1,135 @@
+.chess-board{
+    position: absolute;
+    top : 10px;
+    left : 10px;
+}
+
+/** Chess board style **/
+.chess-board .board{
+    position : absolute;
+    width : 512px;
+    height : 512px;
+    border : 1px solid #bbbbbb;
+    background: url('images/brown.png');
+}
+
+/** Chess cell style **/
+.chess-board .board .cell{
+    float : left;
+    width : 64px;
+    height : 64px;
+}
+
+/** Row column style**/
+.chess-board .number-col{
+    position : absolute;
+    top : 0px;
+    left : 515px;
+    height : 512px;
+    width : 10px;
+}
+
+.chess-board .number-col .row{
+    text-align: center;
+    height : 64px;
+    display: block;
+    position: relative;
+    top : 1.5em;
+}
+
+.chess-board .letter-row{
+    position : absolute;
+    top : 515px;
+    width : 512px;
+    height : 10px
+}
+
+.chess-board .letter-row .column{
+    text-align: center;
+    width : 60px;
+    display: inline-block;
+}
+
+/** Chess Pieces style **/
+.chess-board .board .cell .chess-piece.black.rook{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -195px -66px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.white.rook{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -195px 0px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.black.knight{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -130px -66px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.white.knight{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -130px 0px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.black.bishop{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -65px -66px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.white.bishop{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -65px 0px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.black.queen{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -255px -66px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.white.queen{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -255px 0px;
+    overflow: hidden;
+}
+.chess-board .board .cell .chess-piece.black.king{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -320px -66px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.white.king{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') -320px 0px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.black.pawn{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') 0px -66px;
+    overflow: hidden;
+}
+
+.chess-board .board .cell .chess-piece.white.pawn{
+    width : 64px;
+    height : 64px;
+    background: url('images/sprite.png') 0px 0px;
+    overflow: hidden;
+}
