@@ -24,7 +24,7 @@
 .chess-board .number-col{
     position : absolute;
     top : 0px;
-    left : 515px;
+    left : 520px;
     height : 512px;
     width : 10px;
 }
@@ -39,97 +39,147 @@
 
 .chess-board .letter-row{
     position : absolute;
-    top : 515px;
+    top : 520px;
     width : 512px;
     height : 10px
 }
 
 .chess-board .letter-row .column{
     text-align: center;
-    width : 60px;
+    width : 59px;
     display: inline-block;
 }
 
 /** Chess Pieces style **/
-.chess-board .board .cell .chess-piece.black.rook{
+.chess-piece{
     width : 64px;
     height : 64px;
+    overflow: hidden;
+}
+
+.black.rook{
     background: url('images/sprite.png') -195px -66px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.white.rook{
-    width : 64px;
-    height : 64px;
+.white.rook{
     background: url('images/sprite.png') -195px 0px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.black.knight{
-    width : 64px;
-    height : 64px;
+.black.knight{
     background: url('images/sprite.png') -130px -66px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.white.knight{
-    width : 64px;
-    height : 64px;
+.white.knight{
     background: url('images/sprite.png') -130px 0px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.black.bishop{
-    width : 64px;
-    height : 64px;
+.black.bishop{
     background: url('images/sprite.png') -65px -66px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.white.bishop{
-    width : 64px;
-    height : 64px;
+.white.bishop{
     background: url('images/sprite.png') -65px 0px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.black.queen{
-    width : 64px;
-    height : 64px;
+.black.queen{
     background: url('images/sprite.png') -255px -66px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.white.queen{
-    width : 64px;
-    height : 64px;
+.white.queen{
     background: url('images/sprite.png') -255px 0px;
-    overflow: hidden;
 }
-.chess-board .board .cell .chess-piece.black.king{
-    width : 64px;
-    height : 64px;
+.black.king{
     background: url('images/sprite.png') -320px -66px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.white.king{
-    width : 64px;
-    height : 64px;
+.white.king{
     background: url('images/sprite.png') -320px 0px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.black.pawn{
-    width : 64px;
-    height : 64px;
+.black.pawn{
     background: url('images/sprite.png') 0px -66px;
-    overflow: hidden;
 }
 
-.chess-board .board .cell .chess-piece.white.pawn{
-    width : 64px;
-    height : 64px;
+.white.pawn{
     background: url('images/sprite.png') 0px 0px;
-    overflow: hidden;
+}
+
+/** Chess clock styles **/
+.chess-clock{
+    position : absolute;
+    border : 1px solid #dddddd;
+    top : 200px;
+    left : 575px;
+    width : 200px;
+    height : 120px;
+}
+
+.chess-clock .timer{
+    position : absolute;
+    width : 120px;
+    height : 35px;
+}
+
+.chess-clock .timer.black{
+    top : -36px;
+    left : -1px;
+    border-top : 1px solid #dddddd;
+    border-left : 1px solid #dddddd;
+    border-right : 1px solid #dddddd;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.chess-clock .timer.white{
+    top : 120px;
+    left : -1px;
+    border-bottom : 1px solid #dddddd;
+    border-left : 1px solid #dddddd;
+    border-right : 1px solid #dddddd;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.chess-clock .timer .time{
+    color : #777777;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    font-family: monospace;
+}
+
+.chess-clock .player-info{
+    position: relative;
+    height : 30px;
+}
+
+.chess-clock .turn{
+    position: relative;
+    height : 58px;
+    width : 180px;
+    margin: auto;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.chess-clock .black-plays, .chess-clock .white-plays{
+    display: inline-block;
+    width : inherit;
+    height: inherit;
+    color : #555555;
+}
+
+.chess-clock .white-plays.invisible, .chess-clock .black-plays.invisible{
+    display: none;
+}
+
+.chess-clock .turn .black-info, .chess-clock .turn .white-info{
+    position: relative;
+    top: -46px;
+    left: 64px;
+    width: 116px;
+    display: inline-block;
+    height: 64px;
+    vertical-align: middle;
+    text-align: center;
 }

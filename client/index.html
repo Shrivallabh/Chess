@@ -5,13 +5,14 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/chess-board.css" />
 
-    <script type="text/javascript" src="js/thirdparty/jquery-2.0.3.js"></script>
-    <script type="text/javascript" src="js/app/chess.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="src/chess-ui.js"></script>
 </head>
 <body>
     <div id="chess-board-container">
         <div class="chess-board">
             <div class="board">
+                <!-- 8th Row -->
                 <div class="cell" id="a8"></div>
                 <div class="cell" id="b8"></div>
                 <div class="cell" id="c8"></div>
@@ -20,7 +21,7 @@
                 <div class="cell" id="f8"></div>
                 <div class="cell" id="g8"></div>
                 <div class="cell" id="h8"></div>
-
+                <!-- 7th Row -->
                 <div class="cell" id="a7"></div>
                 <div class="cell" id="b7"></div>
                 <div class="cell" id="c7"></div>
@@ -29,7 +30,7 @@
                 <div class="cell" id="f7"></div>
                 <div class="cell" id="g7"></div>
                 <div class="cell" id="h7"></div>
-
+                <!-- 6th Row -->
                 <div class="cell" id="a6"></div>
                 <div class="cell" id="b6"></div>
                 <div class="cell" id="c6"></div>
@@ -38,7 +39,7 @@
                 <div class="cell" id="f6"></div>
                 <div class="cell" id="g6"></div>
                 <div class="cell" id="h6"></div>
-
+                <!-- 5th Row -->
                 <div class="cell" id="a5"></div>
                 <div class="cell" id="b5"></div>
                 <div class="cell" id="c5"></div>
@@ -47,7 +48,7 @@
                 <div class="cell" id="f5"></div>
                 <div class="cell" id="g5"></div>
                 <div class="cell" id="h5"></div>
-
+                <!-- 4th Row -->
                 <div class="cell" id="a4"></div>
                 <div class="cell" id="b4"></div>
                 <div class="cell" id="c4"></div>
@@ -56,7 +57,7 @@
                 <div class="cell" id="f4"></div>
                 <div class="cell" id="g4"></div>
                 <div class="cell" id="h4"></div>
-
+                <!-- 3rd Row -->
                 <div class="cell" id="a3"></div>
                 <div class="cell" id="b3"></div>
                 <div class="cell" id="c3"></div>
@@ -65,7 +66,7 @@
                 <div class="cell" id="f3"></div>
                 <div class="cell" id="g3"></div>
                 <div class="cell" id="h3"></div>
-
+                <!-- 2nd Row -->
                 <div class="cell" id="a2"></div>
                 <div class="cell" id="b2"></div>
                 <div class="cell" id="c2"></div>
@@ -74,7 +75,7 @@
                 <div class="cell" id="f2"></div>
                 <div class="cell" id="g2"></div>
                 <div class="cell" id="h2"></div>
-
+                <!-- 1st Row -->
                 <div class="cell" id="a1"></div>
                 <div class="cell" id="b1"></div>
                 <div class="cell" id="c1"></div>
@@ -104,6 +105,26 @@
                 <li class="row">2</li>
                 <li class="row">1</li>
             </ul>
+        </div>
+        <div class="chess-clock">
+            <div class="timer black">
+                <div class="time">0:00:0.0</div>
+            </div>
+            <div class="timer white">
+                <div class="time">0:00:0.0</div>
+            </div>
+            <div class="player-info white"></div>
+            <div class="turn">
+                <div class="black-plays">
+                    <div class="chess-piece black king"></div>
+                    <div class="black-info">Black plays!</div>
+                </div>
+                <div class="white-plays invisible">
+                    <div class="chess-piece white king"></div>
+                    <div class="white-info">White plays!</div>
+                </div>
+            </div>
+            <div class="player-info black"></div>
         </div>
     </div>
 </body>

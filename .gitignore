@@ -11,3 +11,21 @@ project/plugins/project/
 
 # Scala-IDE specific
 .scala_dependencies
+
+client/.idea/webResources.xml
+
+client/.idea/workspace.xml
+
+client/.idea/vcs.xml
+
+client/.idea/scopes/scope_settings.xml
+
+client/.idea/modules.xml
+
+client/.idea/misc.xml
+
+client/.idea/.name
+
+client/.idea/client.iml
+
+client/.idea/encodings.xml
